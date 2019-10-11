@@ -7,7 +7,7 @@
  * @param { String } filename filename of the image
  */
 
-const saveDiv = (divId, filename) => {
+module.exports = (divId, filename) => {
   // print screen
   const html2canvas = require("html2canvas");
 
@@ -36,8 +36,4 @@ const saveDiv = (divId, filename) => {
       }
     });
   });
-};
-
-module.exports = {
-  saveDiv
 };

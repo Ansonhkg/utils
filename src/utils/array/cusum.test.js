@@ -1,4 +1,4 @@
-const { cusum } = require("./cusum");
+const cusum = require("./cusum");
 
 test("cusum of [1,2] should be [1,3]", () => {
   var result = cusum([1, 2]);
