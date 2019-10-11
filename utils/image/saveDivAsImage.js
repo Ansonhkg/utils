@@ -51,8 +51,7 @@ function run_saveDivAsImage() {
   }
 }
 
-run_saveDivAsImage();
-
 module.exports = {
-  saveDivAsImage
+  saveDivAsImage,
+  run_saveDivAsImage
 };

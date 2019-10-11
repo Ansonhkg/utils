@@ -1,6 +1,6 @@
 {
   "name": "@ansonhkg/utils",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "a personal utils library.",
   "main": "index.js",
   "scripts": {
