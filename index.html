@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Testing @ansonhkg/utils</title>
+  </head>
+  <body>
+    <!-- save div as image -->
+    <div style="display: flex;">
+      <div
+        id="targetFoo"
+        style="background-color:red; width: 200px; height: 200px;display:flex; justify-content:center;text-align: center;margin: 10px;"
+      >
+        <span style="margin:auto;">
+          Hello, this is a sample RED div to take a screenshot.
+        </span>
+      </div>
+
+      <div
+        id="targetBar"
+        style="background-color:green; width: 200px; height: 200px;display:flex; justify-content:center;text-align: center;margin: 10px;"
+      >
+        <span style="margin:auto;">
+          Hello, this is a sample GREEN div to take a screenshot.
+        </span>
+      </div>
+    </div>
+
+    <button id="button" __target="targetFoo" __saveAs="Red Box">
+      Button RED
+    </button>
+
+    <button id="button" __target="targetBar" __saveAs="Green Box">
+      Button GREEN
+    </button>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

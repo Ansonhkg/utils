@@ -46,3 +46,16 @@ import { saveDivAsImage } from '@ansonhkg/utils';
 saveDivAsImage("your-div-id", 'your-custom-file-name');
 
 ```
+
+or html
+
+```html
+
+<!-- target div -->
+<div id="targetFoo"></div>
+
+<!-- __target div id and __saveas file name -->
+<button ___target="targetFoo" __saveAs="BarName">
+  Download Image
+</button>
+```
