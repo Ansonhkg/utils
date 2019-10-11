@@ -11,6 +11,8 @@ A utils library for personal use.
     - [Cusum](#cusum)
   - [Image](#image)
     - [Save Div as Image](#save-div-as-image)
+  - [math](#math)
+    - [Add commas to digit](#add-commas-to-digit)
 # Installation
 
 ## npm
@@ -51,4 +53,17 @@ import utils from '@ansonhkg/utils';
 
 utils.image.saveDiv("divId", 'filename');
 
+```
+
+## math
+
+### Add commas to digit
+```js
+import utils from '@ansonhkg/utils';
+
+var value = 1000000
+
+var output = utils.math.commas(value);
+
+// expected outcome 1,000,000
 ```
