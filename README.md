@@ -41,6 +41,11 @@ var output = utils.array.cusum(input);
 ## Image
 
 ### Save Div as Image
+```html
+<!-- target div -->
+<div id="divId"></div>
+```
+
 ```js
 import utils from '@ansonhkg/utils';
 

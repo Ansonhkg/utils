@@ -5,9 +5,10 @@ const utils = {
   image: {
     saveDiv: (divId, filename) =>
       require("./utils/image/saveDiv")(divId, filename)
+  },
+  math: {
+    commas: value => require("./utils/math/commas")(value)
   }
 };
-
-console.log(utils.array.cusum([1, 2, 3, 4, 5]));
 
 module.exports = utils;
