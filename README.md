@@ -2,6 +2,13 @@
 
 A utils library for personal use.
 
+- [What is this?](#what-is-this)
+- [Installation](#installation)
+  - [npm](#npm)
+  - [yarn](#yarn)
+- [Usage](#usage)
+  - [Array](#array)
+    - [Cusum](#cusum)
 # Installation
 
 ## npm
@@ -13,6 +20,11 @@ A utils library for personal use.
 
 Then ...
 
+# Usage
+
+## Array
+
+### Cusum
 ``` js
 import { cusum } from '@ansonhkg/utils';
 
