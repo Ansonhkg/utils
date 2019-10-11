@@ -5,16 +5,16 @@ A utils library for personal use.
 # Installation
 
 ## npm
-`npm i utils@ansonhkg --save`
+`npm i utils@ansoncheung.me --save`
 
 ## yarn
 
-`yarn add utils@ansonhkg`
+`yarn add utils@ansoncheung.me`
 
 Then ...
 
 ``` js
-import { cusum } from 'utils@ansonhkg';
+import { cusum } from 'utils@ansoncheung.me';
 
 var input = [1,2,3,4,5];
 

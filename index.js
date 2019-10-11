@@ -2,8 +2,7 @@
  * Turn an array of numbers to cumulative sum array
  * @param { Array } [1,2,3,4,5]
  * @return { Array } [1,3,6,10,15]
- * @Author Anson Cheung http://ansoncheung.me
- * @Link https://jsfiddle.net/Ansonhkg/ur8kbmvh
+ * @example https://jsfiddle.net/Ansonhkg/ur8kbmvh
  */
 const accumulate = (a, c) => a + c;
 

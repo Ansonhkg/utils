@@ -1,0 +1,22 @@
+{
+  "name": "@ansoncheung.me/utils",
+  "version": "0.0.0",
+  "description": "a personal utils library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ansonhkg/utils.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "Anson Cheung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ansonhkg/utils/issues"
+  },
+  "homepage": "https://github.com/Ansonhkg/utils#readme"
+}
