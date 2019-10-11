@@ -1,5 +1,5 @@
 // Array
-import cusum from "./array/cusum";
+const { cusum } = require("./array/cusum");
 
 module.exports = {
   cusum
