@@ -1,12 +1,10 @@
 {
   "name": "@ansonhkg/utils",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "a personal utils library.",
   "main": "./src/index.js",
   "scripts": {
-    "test": "jest",
-    "patch": "npm version patch",
-    "publish": "npm publish --access public"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
