@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "jest",
-    "publish::patch": "yarn version --patch && yarn publish"
+    "publish:patch": "yarn version --patch && yarn publish"
   },
   "repository": {
     "type": "git",
