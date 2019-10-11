@@ -28,21 +28,22 @@ Then ...
 
 ### Cusum
 ``` js
-import { cusum } from '@ansonhkg/utils';
+import utils from '@ansonhkg/utils';
 
 var input = [1,2,3,4,5];
 
-var output = cusum(input);
+var output = utils.array.cusum(input);
 
 // expected output: [1,3,6,10,15]
+
 ```
 
 ## Image
 
 ### Save Div as Image
 ```js
-import { saveDivAsImage } from '@ansonhkg/utils';
+import utils from '@ansonhkg/utils';
 
-saveDivAsImage("your-div-id", 'your-custom-file-name');
+utils.image.saveDiv("divId", 'filename');
 
 ```

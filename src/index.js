@@ -2,9 +2,16 @@
 const { cusum } = require("./utils/array/cusum");
 
 // Image
-const { saveDivAsImage } = require("./utils/image/saveDivAsImage");
+const { saveDiv } = require("./utils/image/saveDiv");
 
+const utils = {
+  array: {
+    cusum
+  },
+  image: {
+    saveDiv
+  }
+};
 module.exports = {
-  cusum,
-  saveDivAsImage
+  utils
 };
