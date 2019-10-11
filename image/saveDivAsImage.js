@@ -3,7 +3,7 @@
  * @param { String } filename filename of the image
  */
 
-module.exports = (divId, filename) => {
+const saveDivAsImage = (divId, filename) => {
   // print screen
   const html2canvas = require("html2canvas");
 
@@ -32,4 +32,8 @@ module.exports = (divId, filename) => {
       }
     });
   });
+};
+
+module.exports = {
+  saveDivAsImage
 };
