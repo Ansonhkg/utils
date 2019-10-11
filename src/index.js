@@ -10,6 +10,4 @@ const utils = {
 
 console.log(utils.array.cusum([1, 2, 3, 4, 5]));
 
-module.exports = {
-  utils
-};
+module.exports = utils;
