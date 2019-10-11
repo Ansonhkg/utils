@@ -1,11 +1,11 @@
 {
   "name": "@ansonhkg/utils",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "a personal utils library.",
   "main": "./src/index.js",
   "scripts": {
     "test": "jest",
-    "patch": "yarn version --patch && npm publish --access public"
+    "patch": "yarn login && yarn version --patch && npm publish --access public"
   },
   "repository": {
     "type": "git",
