@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "patch": "yarn version --patch",
-    "pub": "yarn patch && npm publish --access public"
+    "pub": "yarn patch && yarn publish --non-interactive"
   },
   "repository": {
     "type": "git",
