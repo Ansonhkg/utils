@@ -9,6 +9,8 @@ A utils library for personal use.
 - [Usage](#usage)
   - [Array](#array)
     - [Cusum](#cusum)
+  - [Image](#image)
+    - [Save Div as Image](#save-div-as-image)
 # Installation
 
 ## npm
@@ -35,3 +37,12 @@ var output = cusum(input);
 // expected output: [1,3,6,10,15]
 ```
 
+## Image
+
+### Save Div as Image
+```js
+import { saveDivAsImage } from '@ansonhkg/utils';
+
+saveDivAsImage("your-div-id", 'your-custom-file-name');
+
+```
