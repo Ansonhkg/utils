@@ -4,18 +4,7 @@ const utils = {
   },
   image: {
     saveDiv: (divId, filename) =>
-      require("./utils/image/saveDiv")(divId, filename),
-    vue:{
-      directives = {
-        me: {
-          inserted(el, binding, vnode) {
-            el.addEventListener("click", event => {
-              console.log(binding);
-            });
-          }
-        }
-      }
-    }
+      require("./utils/image/saveDiv")(divId, filename)
   },
   math: {
     commas: value => require("./utils/math/commas")(value)
