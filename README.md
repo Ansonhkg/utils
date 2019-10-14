@@ -13,6 +13,9 @@ A utils library for personal use.
     - [Save Div as Image](#save-div-as-image)
   - [math](#math)
     - [Add commas to digit](#add-commas-to-digit)
+  - [ui](#ui)
+    - [Remove html tags from string](#remove-html-tags-from-string)
+    - [Dynamically changes a div height based on if div has touched footer](#dynamically-changes-a-div-height-based-on-if-div-has-touched-footer)
 # Installation
 
 ## npm
@@ -66,4 +69,33 @@ var value = 1000000
 var output = utils.math.commas(value);
 
 // expected outcome 1,000,000
+```
+
+## ui
+
+### Remove html tags from string
+```js
+import utils from '@ansonhkg/utils';
+
+var string = '<h1>food</h1>';
+
+var new_string = utils.ul.html(string);
+
+// expected outcome food
+```
+
+### Dynamically changes a div height based on if div has touched footer
+```js
+import utils from '@ansonhkg/utils';
+
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener('scroll', () => {
+        if (window.innerWidth >= 1024) {
+          utils.ul.dynamicDiv('header', 'targetDiv', 'footer')
+        }
+      })
+    })
+  }
+
 ```
