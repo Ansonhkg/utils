@@ -7,15 +7,15 @@ A utils library for personal use.
   - [npm](#npm)
   - [yarn](#yarn)
 - [Usage](#usage)
-  - [Array](#array)
-    - [Cusum](#cusum)
-  - [Image](#image)
+  - [Images](#images)
     - [Save Div as Image](#save-div-as-image)
-  - [math](#math)
+  - [Math](#math)
     - [Add commas to digit](#add-commas-to-digit)
-  - [ui](#ui)
+    - [Cusum](#cusum)
+  - [UI](#ui)
     - [Remove html tags from string](#remove-html-tags-from-string)
     - [Dynamically changes a div height based on if div has touched footer](#dynamically-changes-a-div-height-based-on-if-div-has-touched-footer)
+- [How to publish NPM](#how-to-publish-npm)
 # Installation
 
 ## npm
@@ -29,21 +29,8 @@ Then ...
 
 # Usage
 
-## Array
 
-### Cusum
-``` js
-import utils from '@ansonhkg/utils';
-
-var input = [1,2,3,4,5];
-
-var output = utils.array.cusum(input);
-
-// expected output: [1,3,6,10,15]
-
-```
-
-## Image
+## Images
 
 ### Save Div as Image
 ```html
@@ -58,7 +45,7 @@ utils.image.saveDiv("divId", 'filename');
 
 ```
 
-## math
+## Math
 
 ### Add commas to digit
 ```js
@@ -71,7 +58,19 @@ var output = utils.math.commas(value);
 // expected outcome 1,000,000
 ```
 
-## ui
+### Cusum
+``` js
+import utils from '@ansonhkg/utils';
+
+var input = [1,2,3,4,5];
+
+var output = utils.array.cusum(input);
+
+// expected output: [1,3,6,10,15]
+
+```
+
+## UI
 
 ### Remove html tags from string
 ```js
@@ -98,4 +97,27 @@ import utils from '@ansonhkg/utils';
     })
   }
 
+```
+
+
+# How to publish NPM
+
+Make sure you have login to npm
+
+```npm login```
+
+initialize
+
+```npm init ```
+
+inside `package.json`, add the following to your scripts
+
+```json
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "test": "jest",
+    "publish:patch": "yarn version --patch && yarn publish",
+    "publish:minor": "yarn version --minor && yarn publish",
+    "publish:major": "yarn version --major && yarn publish"
+  },
 ```
