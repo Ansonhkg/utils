@@ -102,6 +102,8 @@ import utils from '@ansonhkg/utils';
 
 # How to publish NPM
 
+`yarn` to install all dependencies to run `yarn test`
+
 Make sure you have login to npm
 
 ```npm login```
@@ -121,3 +123,6 @@ inside `package.json`, add the following to your scripts
     "publish:major": "yarn version --major && yarn publish"
   },
 ```
+
+Your your new version when it prompts `question New version` eg 0.0.35 when patching.
+
