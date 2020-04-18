@@ -102,7 +102,9 @@ import utils from '@ansonhkg/utils';
 
 # How to publish NPM
 
-`yarn` to install all dependencies to run `yarn test`
+> Please note:
+> - `yarn` to install all dependencies to run `yarn test`
+> - Make sure you add `.gitignore` with and ignore `node_modules` when you clone this repo.
 
 Make sure you have login to npm
 
@@ -125,4 +127,3 @@ inside `package.json`, add the following to your scripts
 ```
 
 Your your new version when it prompts `question New version` eg 0.0.35 when patching.
-
