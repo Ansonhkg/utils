@@ -15,6 +15,8 @@ A utils library for personal use.
   - [UI](#ui)
     - [Remove html tags from string](#remove-html-tags-from-string)
     - [Dynamically changes a div height based on if div has touched footer](#dynamically-changes-a-div-height-based-on-if-div-has-touched-footer)
+  - [Javascript functions](#javascript-functions)
+    - [Debounce](#debounce)
 - [How to publish NPM](#how-to-publish-npm)
 # Installation
 
@@ -97,6 +99,50 @@ import utils from '@ansonhkg/utils';
     })
   }
 
+```
+
+## Javascript functions
+
+
+### Debounce
+```js
+
+    // Expected Usage
+    var input = document.getElementById('search-input');
+
+    input.addEventListener('keyup', debounce(() => {
+        // immediate execution
+          
+      }, async () => {
+          // Wait 1000 ms before execution
+          res = await search(input.value);
+          
+      }, 1000));
+    };
+
+
+    /**
+     * Returns a function, that, as long as it contiunes to be invoked, will not
+     * be triggered. 
+     * @param { function } func_immediate function to be called immediately
+     * @param { function } func function to be called after it stops being called for N milliseconds.
+     * @param { number } wait milliseconds before triggering function
+     */
+    function debounce(func_immediate, func, wait){
+
+      var timeoutId;
+    
+      return () => {
+        // function to trigger immediately
+        func_immediate();
+        
+        // Each time the function calls clear timeout
+        clearTimeout(timeoutId);
+
+        // delayed call
+        timeoutId = setTimeout(func, wait);
+      }
+    }
 ```
 
 
